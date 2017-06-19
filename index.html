@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VivaGo</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" type="image/png" href="img-layout/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="clearfix">
+				<li><a href="#"><img src="img-layout/logo.png" alt="LOGO" class=logo></a></li>
+				<li><a href="#">CONNEXION</a></li>
+				<li><a href="#">LES NOUVEAUTÉS</a></li>
+				<li><a href="#">S'INSCRIRE</a></li>
+			</ul>
+		</nav>
+		<h1>RESPIREZ L'AIR VENDÉEN</h1>
+		<div class="slider">
+			<figure>
+				<div class="slide">
+					<img src="img-layout/balade.jpg" alt="famille">
+				</div>
+				<div class="slide">
+					<img src="img-layout/marrecage.jpg" alt="paysage">
+				</div>
+				<div class="slide">
+					<img src="img-layout/plage.jpg" alt="mer">
+				</div>
+				<div class="slide">
+					<img src="img-layout/voile.jpg" alt="char">
+				</div>
+				<div class="slide">
+					<img src="img-layout/port.jpg" alt="port">
+				</div>
+			</figure>
+		</div>
+	</header>
+	<div class="search">
+		<input class="barre" type="text" name="search" placeholder="Recherchez votre ville...">
+	</div>
+	<main>
+		<section class="filtre clearfix">
+			<div class="prix">
+				<h3>Choisissez votre prix maximum :</h3>
+				<input type="range" min="1" max="100"/>
+			</div>
+			<div class="date">
+				<h3>Quand ?</h3>
+				<ul>
+					<li>
+						Date du départ : <input class="barre2" type="date" name="date">
+					</li>
+					<li>
+						Date de retour : <input class="barre2" type="date" name="search">
+						<p class="closed">* Veuillez entrer une date valide</p>
+					</li>
+				</ul>
+			</div>
+			<div class="note">
+				<h3>Note :</h3>
+				<ul>
+					<li>
+						<label for="star1">2 étoiles</label> 
+						<input type="checkbox" name="choix" class="coche" id="star1"/>
+					</li>
+					<li>
+						<label for="star2">3 étoiles</label>
+						<input type="checkbox" name="choix" class="coche" id="star2" />
+					</li>
+					<li>
+						<label for="star3">4 étoiles</label> 
+						<input type="checkbox" name="choix" class="coche" id="star3"/>
+					</li>
+					<li>
+						<label for="star4">5 étoiles</label>
+						<input type="checkbox" name="choix" class="coche" id="star4"/>
+					</li>
+				</ul>
+			</div>
+			<div class="personne">
+				<h3>Combien de personnes :</h3>
+				<input class="barre3" type="number" min="1" max="10" placeholder="...">
+				<p class="closed">* Veuillez préciser le nombre de personnes</p>
+			</div>
+			<div class="logement">
+				<h3>Quel type de logement recherchez-vous ?</h3>
+				<ul>
+					<li>
+						<label for="htel1">Hôtel</label>
+						<input type="checkbox" name="choix" class="coche" id="htel1"/>
+					</li>
+					<li>
+						<label for="htel2">Chambre d'hôtes</label>
+						<input type="checkbox" name="choix" class="coche" id="htel2" />
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix equip">
+				<h3>Équipement(s)/service(s) souhaité(s) :</h3>
+				<ul class="clearfix">
+					<li class="col1">
+						<div class="wrapper">
+							<span class="block">
+								<label for="htel3">Parking</label>
+								<input type="checkbox" class="coche" name="choix" id="htel3" />
+							</span>
+							<span class="block">
+								<label for="htel4">Wifi gratuit</label>
+								<input type="checkbox" class="coche" name="choix" id="htel4" />
+							</span>
+							<span class="block">
+								<label for="htel5">Climatisation/chauffage</label>
+								<input type="checkbox" class="coche" name="choix" id="htel5" />
+							</span>
+						</div>
+					</li>
+					<li class="col2">
+						<div class="wrapper">
+							<span class="block">
+								<label for="htel6">Cuisine</label>
+								<input type="checkbox" name="choix" class="coche" id="htel6"/>
+							</span>
+							<span class="block">
+								<label for="htel7">Piscine</label>
+								<input type="checkbox" name="choix" class="coche" id="htel7"/>
+							</span>
+							<span class="block">
+								<label for="htel8">Animaux acceptés</label>
+								<input type="checkbox" name="choix" class="coche" id="htel8"/>
+							</span>
+						</div>
+					</li>
+					<li class="col3">
+						<div class="wrapper">
+							<span class="block">
+								<label for="htel9">Logement fumeur</label>
+								<input type="checkbox" name="choix" class="coche" id="htel9"/>
+							</span>
+							<span class="block">
+								<label for="htel10">Accès handicapés</label>
+								<input type="checkbox" name="choix" class="coche" id="htel10"/>
+							</span>
+							<span class="block">
+								<label for="htel11">Annulation gratuite</label>
+								<input type="checkbox" name="choix" class="coche" id="htel11"/>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<div class="activity clearfix">
+					<h3>Activité(s) souhait(é) à proximité :</h3>
+					<ul>
+						<li class="col1">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel12">Proche du centre ville (moins de 2 km)</label>
+									<input type="checkbox" class="coche" name="choix" id="htel12"/>
+								</span>
+								<span class="block">
+									<label for="htel13">Activités nautiques (ski nautique, char à voile...)</label>
+									<input type="checkbox" class="coche" name="choix" id="htel13"/>
+								</span>
+								<span class="block">
+									<label for="htel14">Transports (navette, bus, gare...)</label>
+									<input type="checkbox" class="coche" name="choix" id="htel14"/>
+								</span>
+							</div>
+						</li>
+						<li class="col2">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel15">Proche de la mère</label>
+									<input type="checkbox" name="choix" class="coche" id="htel15"/>
+								</span>
+								<span class="block">
+									<label for="htel16">Restaurent</label>
+									<input type="checkbox" name="choix" class="coche" id="htel16"/>
+								</span>
+								<span class="block">
+									<label for="htel17">Spa</label>
+									<input type="checkbox" name="choix" class="coche" id="htel17"/>
+								</span>
+							</div>
+						</li>
+						<li class="col3">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel18">Golf</label>
+									<input type="checkbox" name="choix" class="coche" id="htel18"/>
+								</span>
+								<span class="block">
+									<label for="htel19">Cinéma</label>
+									<input type="checkbox" name="choix" class="coche" id="htel19"/>
+								</span>
+							</div>
+						</li>
+					</ul> 					
+				</div>
+			</div>
+			<input type="submit" value="Valider" class="valid"/>
+		</section>
+		<section class="clearfix">
+			<div class="nouveaux">
+				<h2>Les Nouveautés</h2>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel1.jpg" alt="hotel1" class="imgg"></a>
+					<h3>Le Grand Large (Les Sables d'Olonne)</h3>
+					<h4>150€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>
+				</article>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel2.jpg" alt="hotel2" class="imgg"></a>
+					<h3>Le Petit Matelot (St Gilles-Croix-de-Vie)</h3>
+					<h4>80€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>
+				</article>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel3.jpg" alt="hotel3" class="imgg"></a>
+					<h3>La loupe dorée (Jard-sur-Mer)</h3>
+					<h4>65€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="clearfix">
+			<div class="best">
+				<h2>Les Meilleures Notes</h2>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel4.jpg" alt="hotel4" class="imgg"></a>
+					<h3>Chez Jacqueline (La Rochelle)</h3>
+					<h4>168€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">	
+					</div>	
+				</article>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel5.jpg" alt="hotel5" class="imgg"></a> 
+					<h3>Le Petit Marin (La Roche-sur-Yon)</h3>
+					<h4>98€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>		
+				</article>
+				<article>
+
+					<a href="index2.html"><img src="img-content/hotel6.jpg" alt="hotel6" class="imgg"></a>
+					<h3>La Perle Noire (La Rochelle)</h3>
+					<h4>112€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>		
+				</article>
+			</div>
+		</section>
+		<section class="clearfix">
+			<div class="low">
+				<h2>Les Petits Prix</h2>
+				<article>
+					<a href=""><img src="img-content/hotel7.jpg" alt="hotel4" class="imgg"></a>
+					<h3>L'Aurore (Saint-Jean-de-Monts)</h3>
+					<h4>32€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>		
+				</article>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel8.jpg" alt="hotel4" class="imgg"></a>
+					
+					<h3>Chez Jacques & Sophie (La Rochelle)</h3>
+					<h4>28€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>	
+				</article>
+				<article>
+					<a href="index2.html"><img src="img-content/hotel9.jpg" alt="hotel6" class="imgg"></a>
+					<h3>La Loutre de Mer (Les Sables d'Olonne)</h3>
+					<h4>25€/nuit</h4>
+					<h5>Note :</h5>
+					<div class="etoiles">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>	
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<img src="img-layout/logo.png" alt="LOGO" width="50">
+		<p>© VivaGo, Inc.</p>
+		<a href="http://twitter.com" target="_blank"><img src="img-layout/twitter2.png" alt="twitter" /></a>
+		<a href="http://facebook.com" target="_blank"><img src="img-layout/fb2.png" alt="facebook"/></a>
+		<a href="http://instagram.com" target="_blank"><img src="img-layout/instagram2.png" alt="instagram" /></a>
+	</footer>
+</body>
+
+</html>

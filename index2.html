@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>VivaGo</title>
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" type="image/png" href="img-layout/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
+</head>
+<body class="body2">
+	<header>
+		<nav>
+			<ul class="clearfix">
+				<li><a href="#"><img src="img-layout/logo.png" alt="LOGO" class=logo></a></li>
+				<li><a href="#">CONNEXION</a></li>
+				<li><a href="#">LES NOUVEAUTÉS</a></li>
+				<li><a href="#">S'INSCRIRE</a></li>
+			</ul>
+		</nav>
+		<div class="search">
+			<input class="barre" type="text" name="search" placeholder="Saint-Gilles-Croix-de-Vie">
+		</div>
+		<div class="slider">
+			<figure> <!-- Carroussel -->
+				<div class="slide">
+					<img src="img-content/hotelaa.jpg" alt="famille">
+				</div>
+				<div class="slide">
+					<img src="img-content/hotelb.jpg" alt="paysage">
+				</div>
+				<div class="slide">
+					<img src="img-content/hotelc.jpg" alt="mer">
+				</div>
+				<div class="slide">
+					<img src="img-content/hoteld.jpg" alt="char">
+				</div>
+				<div class="slide">
+					<img src="img-content/hotele.jpg" alt="port">
+				</div>
+			</figure>
+		</div>
+	</header>
+	<main class="main2 clearfix">
+		<div class="container clearfix">
+			<aside class="filtre2">
+				<div class="prix2">
+					<h3>Choisissez votre prix maximum :</h3>
+					<input type="range" min="1" max="100"/>
+				</div>
+				<div class="date2">
+					<h3>Quand ?</h3>
+					<ul>
+						<li>
+							Date du départ : <input class="barre2" type="date" name="date">
+						</li>
+						<li>
+							Date de retour : <input class="barre2" type="date" name="search">
+							<p class="closed">* Veuillez entrer une date valide</p>
+						</li>
+					</ul>
+				</div>
+				<div class="note2">
+					<h3>Note :</h3>
+					<ul>
+						<li>
+							<label for="star1">2 étoiles</label> 
+							<input type="checkbox" name="choix" class="coche" id="star1"/>
+						</li>
+						<li>
+							<label for="star2">3 étoiles</label>
+							<input type="checkbox" name="choix" class="coche" id="star2" />
+						</li>
+						<li>
+							<label for="star3">4 étoiles</label> 
+							<input type="checkbox" name="choix" class="coche" id="star3"/>
+						</li>
+						<li>
+							<label for="star4">5 étoiles</label>
+							<input type="checkbox" name="choix" class="coche" id="star4" checked="" />
+						</li>
+					</ul>
+				</div>
+				<div class="personne2">
+					<h3>Combien de personnes :</h3>
+					<input class="barre3" type="number" min="1" max="10" placeholder="...">
+					<p class="closed">* Veuillez préciser le nombre de personnes</p>
+				</div>
+				<div class="logement2">
+					<h3>Quel type de logement recherchez-vous ?</h3>
+					<ul>
+						<li>
+							<label for="htel1">Hôtel</label>
+							<input type="checkbox" name="choix" class="coche" id="htel1" checked="" />
+						</li>
+						<li>
+							<label for="htel2">Chambre d'hôtes</label>
+							<input type="checkbox" name="choix" class="coche" id="htel2" />
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix equip2">
+					<h3>Équipement(s)/service(s) souhaité(s) :</h3>
+					<ul class="clearfix">
+						<li class="col1">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel3">Parking</label>
+									<input type="checkbox" class="coche" name="choix" id="htel3" checked="" />
+								</span>
+								<span class="block">
+									<label for="htel4">Wifi gratuit</label>
+									<input type="checkbox" class="coche" name="choix" id="htel4" checked="" />
+								</span>
+								<span class="block">
+									<label for="htel5">Climatisation/chauffage</label>
+									<input type="checkbox" class="coche" name="choix" id="htel5" />
+								</span>
+							</div>
+						</li>
+						<li class="col2">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel6">Cuisine</label>
+									<input type="checkbox" name="choix" class="coche" id="htel6"/>
+								</span>
+								<span class="block">
+									<label for="htel7">Piscine</label>
+									<input type="checkbox" name="choix" class="coche" id="htel7" checked="" />
+								</span>
+								<span class="block">
+									<label for="htel8">Animaux acceptés</label>
+									<input type="checkbox" name="choix" class="coche" id="htel8" checked="" />
+								</span>
+							</div>
+						</li>
+						<li class="col3">
+							<div class="wrapper">
+								<span class="block">
+									<label for="htel9">Logement fumeur</label>
+									<input type="checkbox" name="choix" class="coche" id="htel9"/>
+								</span>
+								<span class="block">
+									<label for="htel10">Accès handicapés</label>
+									<input type="checkbox" name="choix" class="coche" id="htel10"/>
+								</span>
+								<span class="block">
+									<label for="htel11">Annulation gratuite</label>
+									<input type="checkbox" name="choix" class="coche" id="htel11"/>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<div class="activity clearfix">
+						<h3>Activité(s) souhait(é) à proximité :</h3>
+						<ul>
+							<li class="col1">
+								<div class="wrapper">
+									<span class="block">
+										<label for="htel12">Proche du centre ville </label>
+										<input type="checkbox" class="coche" name="choix" id="htel12"/>
+									</span>
+									<span class="block">
+										<label for="htel13">Activités nautiques</label>
+										<input type="checkbox" class="coche" name="choix" id="htel13"/>
+									</span>
+									<span class="block">
+										<label for="htel14">Transports</label>
+										<input type="checkbox" class="coche" name="choix" id="htel14"/>
+									</span>
+								</div>
+							</li>
+							<li class="col2">
+								<div class="wrapper">
+									<span class="block">
+										<label for="htel15">Proche de la mère</label>
+										<input type="checkbox" name="choix" class="coche" id="htel15"/>
+									</span>
+									<span class="block">
+										<label for="htel16">Restaurent</label>
+										<input type="checkbox" name="choix" class="coche" id="htel16"/>
+									</span>
+									<span class="block">
+										<label for="htel17">Spa</label>
+										<input type="checkbox" name="choix" class="coche" id="htel17"/>
+									</span>
+								</div>
+							</li>
+							<li class="col3">
+								<div class="wrapper">
+									<span class="block">
+										<label for="htel18">Golf</label>
+										<input type="checkbox" name="choix" class="coche" id="htel18"/>
+									</span>
+									<span class="block">
+										<label for="htel19">Cinéma</label>
+										<input type="checkbox" name="choix" class="coche" id="htel19"/>
+									</span>
+								</div>
+							</li>
+						</ul> 					
+					</div>
+				</div>
+				<input type="submit" value="Valider" class="valid4"/>
+			</aside>
+			<div id="map"></div>
+		</div>
+
+
+
+		<section class="resum clearfix">
+			<input type="submit" value="RÉSERVER" class="valid2"/>
+			<article >
+				<h2>Edena Résidence</h2>
+				<div class="content-note">
+					<img src="img-content/star2.png" alt="étoile">
+					<img src="img-content/star2.png" alt="étoile">
+					<img src="img-content/star2.png" alt="étoile">
+					<img src="img-content/star2.png" alt="étoile">
+					<img src="img-content/star2.png" alt="étoile">
+				</div>
+				<h3>39 Bd du Maréchal de Lattre de Tassigny, 85806 Saint-Gilles-Croix-de-Vie, France</h3>
+				<div id="nb">
+					<img src="img-content/personne.png" alt="group">
+					2 personnes
+				</div>
+				<div id="style-loge">
+					<img src="img-content/house.png" alt="house">
+					Hôtel
+				</div>
+				<div id="smoke">
+					<img src="img-content/smoke.png" alt="smoke">
+					Non fumeur
+				</div>
+			</article>
+			<section class="descrip clearfix">
+				<article >
+					<h4>Description :</h4>
+					<p>Cet hôtel dispose de piscines intérieure et extérieure. Une connexion Wi-Fi et un parking privé sont également disponibles. Tous les hébergements comprennent la climatisation, une salle de bains privative, une télévision à écran plat et un téléphone. <br>Durant votre séjour à l'Edena, vous pourrez vous détendre dans le coin salon à proximité de la piscine et profiter librement du court de tennis et de la salle de remise en forme. Un sauna et une bibliothèque sont également mis à votre disposition.
+					</p>
+				</article>
+			</section>
+			<section class="logemt clearfix">
+				<article>
+					<h4>À propos de ce logement :</h4>	
+					<ul>
+						<li>
+							Arrivée : <strong>14h30</strong>
+						</li>
+						<li>
+							Départ : <strong>13h</strong>
+						</li>
+						<li>
+							Type de logement : <strong>Chambre d'hôtel</strong>
+						</li>
+						<li>
+							Lits : <strong>1 lit double</strong>
+						</li>
+						<li>
+							Salle de bain : <strong>Oui</strong>
+						</li>
+					</ul>		
+				</article>			
+			</section>
+			<section class="equipmt clearfix">
+				<article >
+					<h4>Équipements :</h4>
+					<ul>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/wifi.png" alt="wifi">
+								Wifi gratuit						
+							</div>
+						</li>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/parking.png" alt="parking">
+								Parking
+							</div>
+						</li>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/dej.png" alt="petit dej">
+								Petit déjeuner
+							</div>
+						</li>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/tv.png" alt="tv">
+								Télévision
+							</div>
+						</li>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/swim.png" alt="piscine">
+								Piscine
+							</div>
+						</li>
+						<li>
+							<div class="equipmt-bis">
+								<img src="img-content/animal.png" alt="animal">
+								Animaux acceptés
+							</div>
+						</li>
+					</ul>	
+				</article>
+			</section>
+			<article class="action">
+				<h4>Activités alentours :</h4>
+				<ul>
+					<li>
+						<div class="action2">
+							<img src="img-content/sea.png" alt="sea">
+							Proche de la mer								
+						</div>
+					</li>
+					<li>
+						<div class="action2">
+							<img src="img-content/activity.png" alt="Activités">
+							Activités nautiques								
+						</div>
+					</li>
+				</ul>
+			</article>
+			<section class="price">
+				<article >
+					<ul>
+						<li>
+							Prix : <strong>85€/jour par personne</strong>
+						</li>
+						<li>
+							Frais de ménage : <strong>39€</strong>
+						</li>
+						<li>
+							Paiement accepté : <strong>Carte bleue et espèce</strong> 
+						</li>
+					</ul>
+				</article>	
+			</section>
+			<section class="avis">
+				<article>
+					<h3>452 commentaires sur cette hôtel</h3>
+					<div class="content-note">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+						<img src="img-content/star2.png" alt="étoile">
+					</div>
+					<div id="avis">
+						<h4>Résumé :</h4>
+						<ul>
+							<li>
+								<div class="avis-bis">
+									<h5>Qualité/prix :</h5>
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">									
+								</div>
+							</li>
+							<li>
+								<div class="avis-bis">
+									<h5>Propreté :</h5>
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+								</div>
+							</li>
+							<li>
+								<div class="avis-bis">
+									<h5>Service :</h5>
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+									<img src="img-content/star2.png" alt="étoile">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<section class="comm clearfix">
+				<article>
+					<div class="comm1">
+						<img src="img-content/unknown.png" alt="inconnu">
+						<p>Très bien lits confortables, chambre et SDB très propres. Personnel accueillant. Rien a dire en plus piscine intérieure et extérieure. Parfait !</p>
+						<input type="submit" value="J'aime !" class="valid3"/>
+					</div>
+					<div class="comm1">
+						<img src="img-content/unknown.png" alt="inconnu">
+						<p>Le côté agréable du personnel de l'accueil et la piscine et le confort de la chambre et la propreté.</p>
+						<input type="submit" value="J'aime !" class="valid3"/>
+					</div>
+					<div class="comm1">
+						<img src="img-content/unknown.png" alt="inconnu">
+						<p>Belle chambre. Superbe salle de bain avec douche à l'italienne et WC séparés. Un lit de 180cm de large. Il y à même un petit frigo ce qui nous a permis de stocker quelques boissons. La piscine intérieure chauffée était très agréable.</p>
+						<input type="submit" value="J'aime !" class="valid3"/>
+					</div>
+				</article>
+			</section>
+		</section>
+
+		<footer class="footer2">
+			<img src="img-layout/logo.png" alt="LOGO" width="50">
+			<p>© VivaGo, Inc.</p>
+			<a href="http://twitter.com" target="_blank"><img src="img-layout/twitter2.png" alt="twitter" /></a>
+			<a href="http://facebook.com" target="_blank"><img src="img-layout/fb2.png" alt="facebook"/></a>
+			<a href="http://instagram.com" target="_blank"><img src="img-layout/instagram2.png" alt="instagram" /></a>
+		</footer>		
+	</main>
+	<script>
+		function initMap() {
+			var uluru = {lat:46.69340199999999 , lng:-1.925353599999994 };
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 12,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaZetb8fnS8ajw2_JNx90-KhDL48ibN7Y&callback=initMap">
+</script>
+</body>
+</html>
